@@ -399,16 +399,15 @@ section {
     width: 100%;
     padding: 6rem 5%;
 }
-/* Contenidor principal: Info a l'esquerra, CV a la dreta */
+
 .about-container {
     display: flex;
     gap: 2rem;
     align-items: flex-start;
-    max-width: 1400px; /* Ample adaptat al teu navbar/hero */
+    max-width: 1400px; 
     width: 100%;
 }
 
-/* Informació (Esquerra) - Pren més espai */
 .facts {
     flex: 2;
     display: flex;
@@ -416,7 +415,20 @@ section {
     gap: 1.5rem;
 }
 
-/* Columna del CV (Dreta) - Mida fixa/compacta */
+.about a {
+    color:  var(--primary-color);              
+    text-decoration: underline; 
+    font-weight: 600;            
+    cursor: pointer;             
+    transition: color 0.2s ease;
+}
+.about a.btn {
+    text-decoration: none;
+}
+.about a:hover {
+    text-decoration: none;   
+}
+
 .cv-column {
     flex: 1;
     max-width: 320px;
@@ -437,7 +449,6 @@ section {
     text-decoration: none;
 }
 
-/* Estils de les targetes */
 .fact {
     background-color: #ffffff;
     padding: 1.5rem;
